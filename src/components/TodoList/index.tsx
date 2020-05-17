@@ -1,8 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { useRecoilValue } from "recoil";
+
+import { todoListState, Todo } from "atoms/TodoList";
 
 const TodoList = () => {
-  return <Container>this is todo list</Container>;
+  const todoList = useRecoilValue(todoListState);
+  return (
+    <Container>
+      {todoList.map((todo: Todo, index: number) => {
+        return <div key={index}>{todo.name}</div>;
+      })}
+    </Container>
+  );
 };
 
 const Container = styled.div``;

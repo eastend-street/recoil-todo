@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
+import { RecoilRoot} from "recoil";
 
 import GlobalStyle from "styles/GlobalStyle";
 import Theme from "styles/Theme";
