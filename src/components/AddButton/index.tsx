@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useSetRecoilState } from "recoil";
 
@@ -24,10 +24,14 @@ const AddButton: React.FC = () => {
 const Button = styled.button`
   background-color: #25aaf5;
   border: none;
+  border-radius: 0.2rem;
   color: #fff;
+  display: block;
   font-size: 1rem;
+  margin: 0 auto;
   outline: none;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  width: 50%;
 
   &:hover {
     cursor: pointer;

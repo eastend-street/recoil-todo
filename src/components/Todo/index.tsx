@@ -34,22 +34,29 @@ const Todo: React.FC<TodoType> = ({ id, name, isDone }) => {
   );
 };
 
+type isDoneProps = {
+  isDone: boolean;
+};
+
 const Container = styled.div`
   border-top: 0.05rem solid #e0e0e0;
   display: flex;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: rgba(196, 196, 196, 0.1);
+  }
+
+  &:focus-within {
+    background-color: #fff;;
+  }
 
   &:last-child {
     border-bottom: 0.05rem solid #e0e0e0;
   }
 `;
 
-type CompleteButtonProps = {
-  isDone: boolean;
-};
-
 const CompleteButton = styled.button`
-  background-color: ${(props: CompleteButtonProps) =>
+  background-color: ${(props: isDoneProps) =>
     props.isDone ? "#25aaf5" : "#fff"};
   border: 0.05rem solid #e0e0e0;
   border-radius: 50%;
@@ -66,6 +73,7 @@ const CompleteButton = styled.button`
 
 const Input = styled.input`
   margin: 0 1rem;
+  background-color: transparent;
   border: none;
   display: block;
   font-size: 1rem;

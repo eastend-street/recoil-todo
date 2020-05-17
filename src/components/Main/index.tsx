@@ -8,8 +8,8 @@ const Main: React.FC = () => {
   return (
     <Container>
       <StyledH1>Recoil Todo</StyledH1>
-      <AddButton />
       <TodoList />
+      <AddButton />
     </Container>
   );
 };
@@ -19,7 +19,7 @@ const Container = styled.div`
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   min-height: 30rem;
   margin: 3rem auto 0;
-  padding: 2rem;
+  padding: 2rem 0;
   width: 25rem;
 `;
 
