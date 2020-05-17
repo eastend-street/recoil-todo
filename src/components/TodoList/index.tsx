@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
 
-import { todoListState, Todo } from "atoms/TodoList";
+import { todoListState, Todo as TodoType } from "atoms/TodoList";
 
-const TodoList = () => {
+const TodoList: React.FC = () => {
   const todoList = useRecoilValue(todoListState);
   return (
     <Container>
-      {todoList.map((todo: Todo, index: number) => {
-        return <div key={index}>{todo.name}</div>;
+      {todoList.map((todo: TodoType) => {
+        return <div key={todo.id}>{todo.name}</div>;
       })}
     </Container>
   );
