@@ -4,17 +4,14 @@ import { RecoilRoot } from "recoil";
 import GlobalStyle from "styles/GlobalStyle";
 import Theme from "styles/Theme";
 
-import TodoList from "components/TodoList";
-import TodoCreator from "components/TodoCreator";
+import Main from "components/Main";
 
 const App: React.FC = () => {
   return (
     <RecoilRoot>
       <Theme>
         <GlobalStyle />
-        <h1>Recoil TODO</h1>
-        <TodoCreator />
-        <TodoList />
+        <Main />
       </Theme>
     </RecoilRoot>
   );
