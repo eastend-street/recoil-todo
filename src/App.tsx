@@ -1,5 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
 
 import GlobalStyle from "styles/GlobalStyle";
 import Theme from "styles/Theme";
@@ -8,16 +14,14 @@ import TodoList from "components/TodoList";
 
 const App = () => {
   return (
-    <Container>
+    <RecoilRoot>
       <Theme>
         <GlobalStyle />
         <h1>Recoil TODO</h1>
         <TodoList />
       </Theme>
-    </Container>
+    </RecoilRoot>
   );
 };
-
-const Container = styled.div``;
 
 export default App;
