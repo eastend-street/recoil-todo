@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
 
-function App() {
+import GlobalStyle from "styles/GlobalStyle";
+import Theme from "styles/Theme";
+
+import TodoList from "components/TodoList";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Theme>
+        <GlobalStyle />
+        <h1>Recoil TODO</h1>
+        <TodoList />
+      </Theme>
+    </Container>
   );
-}
+};
+
+const Container = styled.div``;
 
 export default App;
