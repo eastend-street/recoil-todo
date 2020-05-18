@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useSetRecoilState } from "recoil";
 
 import { todoListState, Todo as TodoType } from "store/TodoList";
+import { CheckFontAwesome } from "styles/FontAwesome";
 
 const Todo: React.FC<TodoType> = ({ id, name, isDone }) => {
   const [todoName, setTodoName] = useState<string>(name);
@@ -28,7 +29,9 @@ const Todo: React.FC<TodoType> = ({ id, name, isDone }) => {
 
   return (
     <Container>
-      <CompleteButton isDone={isDone} onClick={toggleComplete}></CompleteButton>
+      <CompleteButton isDone={isDone} onClick={toggleComplete}>
+        <CheckFontAwesome />
+      </CompleteButton>
       <Input value={todoName} onChange={(e) => editTodoName(e.target.value)} />
     </Container>
   );
@@ -47,7 +50,7 @@ const Container = styled.div`
   }
 
   &:focus-within {
-    background-color: #fff;;
+    background-color: #fff;
   }
 
   &:last-child {
@@ -58,12 +61,12 @@ const Container = styled.div`
 const CompleteButton = styled.button`
   background-color: ${(props: isDoneProps) =>
     props.isDone ? "#25aaf5" : "#fff"};
+  color: ${(props: isDoneProps) => (props.isDone ? "#fff" : "#e0e0e0")};
   border: 0.05rem solid #e0e0e0;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   outline: none;
-  padding: 0.7rem;
-
+  padding: 0.3rem;
   &:hover {
     cursor: pointer;
     opacity: 0.7;
