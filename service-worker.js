@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/recoil-todo/precache-manifest.9e6894b7bfa3dffae8aff5384420405b.js"
+  "/recoil-todo/precache-manifest.71eb07b9397f23028fca4debb24c267d.js"
 );
 
 self.addEventListener('message', (event) => {
