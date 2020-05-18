@@ -4,6 +4,7 @@ import { useSetRecoilState } from "recoil";
 
 import { todoListState, Todo as TodoType } from "store/TodoList";
 import { CheckFontAwesome } from "styles/FontAwesome";
+import Fade from "styles/Fade";
 
 const Todo: React.FC<TodoType> = ({ id, name, isDone }) => {
   const [todoName, setTodoName] = useState<string>(name);
@@ -28,12 +29,17 @@ const Todo: React.FC<TodoType> = ({ id, name, isDone }) => {
   };
 
   return (
-    <Container>
-      <CompleteButton isDone={isDone} onClick={toggleComplete}>
-        <CheckFontAwesome />
-      </CompleteButton>
-      <Input value={todoName} onChange={(e) => editTodoName(e.target.value)} />
-    </Container>
+    <Fade show={!isDone}>
+      <Container>
+        <CompleteButton isDone={isDone} onClick={toggleComplete}>
+          <CheckFontAwesome />
+        </CompleteButton>
+        <Input
+          value={todoName}
+          onChange={(e) => editTodoName(e.target.value)}
+        />
+      </Container>
+    </Fade>
   );
 };
 
@@ -42,7 +48,7 @@ type isDoneProps = {
 };
 
 const Container = styled.div`
-  border-top: 0.05rem solid #e0e0e0;
+  border-bottom: 0.05rem solid #e0e0e0;
   display: flex;
   padding: 0.5rem 1rem;
   &:hover {
@@ -52,18 +58,14 @@ const Container = styled.div`
   &:focus-within {
     background-color: #fff;
   }
-
-  &:last-child {
-    border-bottom: 0.05rem solid #e0e0e0;
-  }
 `;
 
 const CompleteButton = styled.button`
   background-color: ${(props: isDoneProps) =>
     props.isDone ? "#25aaf5" : "#fff"};
-  color: ${(props: isDoneProps) => (props.isDone ? "#fff" : "#e0e0e0")};
   border: 0.05rem solid #e0e0e0;
   border-radius: 50%;
+  color: ${(props: isDoneProps) => (props.isDone ? "#fff" : "#e0e0e0")};
   font-size: 0.8rem;
   outline: none;
   padding: 0.3rem;
