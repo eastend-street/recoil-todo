@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b17c5dd0c966a73bdfa0ce9bdfaa667f",
+    "revision": "8c59d7d56cb9c8a85a9a7d297d08ed39",
     "url": "/recoil-todo/index.html"
   },
   {
-    "revision": "e5eab7f887e5387e210c",
+    "revision": "da119535658fef89a203",
     "url": "/recoil-todo/static/css/main.bb37429d.chunk.css"
   },
   {
-    "revision": "8fb50740c1e2f2d512cc",
-    "url": "/recoil-todo/static/js/2.e8aaa69d.chunk.js"
+    "revision": "76cf718462f42bb47894",
+    "url": "/recoil-todo/static/js/2.11b65317.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/recoil-todo/static/js/2.e8aaa69d.chunk.js.LICENSE.txt"
+    "url": "/recoil-todo/static/js/2.11b65317.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e5eab7f887e5387e210c",
-    "url": "/recoil-todo/static/js/main.509cdf85.chunk.js"
+    "revision": "da119535658fef89a203",
+    "url": "/recoil-todo/static/js/main.3fc7b6b5.chunk.js"
   },
   {
     "revision": "c02cad6d3854a7b3ee82",

@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/recoil-todo/static/css/main.bb37429d.chunk.css",
-    "main.js": "/recoil-todo/static/js/main.509cdf85.chunk.js",
-    "main.js.map": "/recoil-todo/static/js/main.509cdf85.chunk.js.map",
+    "main.js": "/recoil-todo/static/js/main.3fc7b6b5.chunk.js",
+    "main.js.map": "/recoil-todo/static/js/main.3fc7b6b5.chunk.js.map",
     "runtime-main.js": "/recoil-todo/static/js/runtime-main.2ac90072.js",
     "runtime-main.js.map": "/recoil-todo/static/js/runtime-main.2ac90072.js.map",
-    "static/js/2.e8aaa69d.chunk.js": "/recoil-todo/static/js/2.e8aaa69d.chunk.js",
-    "static/js/2.e8aaa69d.chunk.js.map": "/recoil-todo/static/js/2.e8aaa69d.chunk.js.map",
+    "static/js/2.11b65317.chunk.js": "/recoil-todo/static/js/2.11b65317.chunk.js",
+    "static/js/2.11b65317.chunk.js.map": "/recoil-todo/static/js/2.11b65317.chunk.js.map",
     "index.html": "/recoil-todo/index.html",
-    "precache-manifest.1c1e0c81bbca549de4c99dd74dc8566c.js": "/recoil-todo/precache-manifest.1c1e0c81bbca549de4c99dd74dc8566c.js",
+    "precache-manifest.9e6894b7bfa3dffae8aff5384420405b.js": "/recoil-todo/precache-manifest.9e6894b7bfa3dffae8aff5384420405b.js",
     "service-worker.js": "/recoil-todo/service-worker.js",
     "static/css/main.bb37429d.chunk.css.map": "/recoil-todo/static/css/main.bb37429d.chunk.css.map",
-    "static/js/2.e8aaa69d.chunk.js.LICENSE.txt": "/recoil-todo/static/js/2.e8aaa69d.chunk.js.LICENSE.txt"
+    "static/js/2.11b65317.chunk.js.LICENSE.txt": "/recoil-todo/static/js/2.11b65317.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2ac90072.js",
-    "static/js/2.e8aaa69d.chunk.js",
+    "static/js/2.11b65317.chunk.js",
     "static/css/main.bb37429d.chunk.css",
-    "static/js/main.509cdf85.chunk.js"
+    "static/js/main.3fc7b6b5.chunk.js"
   ]
 }
