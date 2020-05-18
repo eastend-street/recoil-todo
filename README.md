@@ -1,7 +1,7 @@
 # Recoil Todo
-WIP: Todo app with [React Recoil](https://recoiljs.org/)
+Todo app with [React Recoil](https://recoiljs.org/)
 
-[Demo](https://eastend-street.github.io/recoil-todo/)
+### [Demo](https://eastend-street.github.io/recoil-todo/)
 
 ## Technologies
 - React.js
